@@ -307,11 +307,12 @@
       <div
         class="mt-10 border-t border-[#3a5b36]/20 pt-6 text-center text-sm text-[#3a5b36]/60"
       >
-        © {new Date().getFullYear()} ERIDEN. All rights reserved.
+        © <span id="year"></span> ERIDEN. All rights reserved.
       </div>
     </footer>
   </body>
   <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
     // Highlight active link
     const currentPath = window.location.pathname;
     document.querySelectorAll(".nav-link, .mobile-nav-link").forEach((link) => {
