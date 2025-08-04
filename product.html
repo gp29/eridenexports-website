@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-roboto: "Roboto", sans-serif;
+        --color-themeColor: #3a5b36;
+        --color-secoundaryColor: #fdfaf3;
+      }
+    </style>
+    <style>
+      .text-themeColor {
+        color: #3a5b36;
+      }
+      .bg-themeColor {
+        background-color: #3a5b36;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <nav class="bg-white fixed top-0 w-full z-10 shadow-sm">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <!-- Mobile menu button -->
+          <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+            <button
+              id="menu-toggle"
+              class="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-inset"
+            >
+              <svg
+                id="menu-icon-open"
+                class="block h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+              <svg
+                id="menu-icon-close"
+                class="hidden h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Logo + Desktop Nav -->
+          <div class="flex flex-1 items-center justify-between">
+            <div class="flex-shrink-0">
+              <h2 class="text-themeColor font-bold text-[35px]">ERIDEN</h2>
+            </div>
+            <div class="hidden sm:flex space-x-4">
+              <a
+                href="index.html"
+                class="nav-link px-3 py-2 rounded-md text-sm font-medium"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="nav-link px-3 py-2 rounded-md text-sm font-medium"
+                >About</a
+              >
+              <a
+                href="product.html"
+                class="nav-link px-3 py-2 rounded-md text-sm font-medium"
+                >Our Products</a
+              >
+              <a
+                href="exportLogistics.html"
+                class="nav-link px-3 py-2 rounded-md text-sm font-medium"
+                >Export & Logistics</a
+              >
+              <a
+                href="contact.html"
+                class="nav-link px-3 py-2 rounded-md text-sm font-medium"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="sm:hidden hidden px-2 pt-2 pb-3">
+        <a
+          href="index.html"
+          class="mobile-nav-link block rounded-md px-3 py-2 text-base font-medium"
+          >Home</a
+        >
+        <a
+          href="about.html"
+          class="mobile-nav-link block rounded-md px-3 py-2 text-base font-medium"
+          >About</a
+        >
+        <a
+          href="product.html"
+          class="mobile-nav-link block rounded-md px-3 py-2 text-base font-medium"
+          >Our Products</a
+        >
+        <a
+          href="exportLogistics.html"
+          class="mobile-nav-link block rounded-md px-3 py-2 text-base font-medium"
+          >Export & Logistics</a
+        >
+        <a
+          href="contact.html"
+          class="mobile-nav-link block rounded-md px-3 py-2 text-base font-medium"
+          >Contact</a
+        >
+      </div>
+    </nav>
+    <section
+      class="bg-secoundaryColor lg:pt-15 pt-7 mt-[64px] flex flex-col items-center justify-center"
+    >
+      <h2
+        class="text-themeColor font-bold xl:text-[80px] lg:text-[60px] text-[40px] mb-10 leading-normal"
+      >
+        Our Products
+      </h2>
+      <img
+        src="./assets/banner-image.jpg"
+        class="w-full h-[500px] object-cover"
+        alt=""
+      />
+    </section>
+    <section class="bg-white lg:py-15 py-7">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <h2
+          class="text-themeColor font-bold lg:text-[50px] text-[35px] mb-2 leading-normal"
+        >
+          Rice Bran
+        </h2>
+        <p class="lg:text-[25px] text-[20px]">
+          We supply high-quality rice bran, known for its nutritional value, and
+          versatile applications. Available in various types and quality grades,
+          we offer customizable packaging options to u customers' needs.
+        </p>
+        <div class="grid grid-cols-12 gap-4 mt-8">
+          <div class="md:col-span-6 col-span-12 flex flex-col gap-4">
+            <div
+              class="box bg-secoundaryColor flex items-center justify-between p-4 lg:text-[30px] text-[20px] font-semibold rounded-lg"
+            >
+              <p>Moisture</p>
+              <span><10%</span>
+            </div>
+            <div
+              class="box bg-secoundaryColor flex items-center justify-between p-4 lg:text-[30px] text-[20px] font-semibold rounded-lg"
+            >
+              <p>Crude Fiber</p>
+              <span><12%</span>
+            </div>
+          </div>
+          <div class="md:col-span-6 col-span-12 flex flex-col gap-4">
+            <div
+              class="box bg-secoundaryColor flex flex-col gap-2 justify-between p-4 lg:text-[30px] text-[20px] font-semibold rounded-lg"
+            >
+              <p>Minimum Order</p>
+              <span class="text-[20px]">100 metric tons</span>
+            </div>
+            <div
+              class="box bg-secoundaryColor flex flex-col gap-2 justify-between p-4 lg:text-[30px] text-[20px] font-semibold rounded-lg"
+            >
+              <p>Packaging</p>
+              <span class="text-[20px]">Bags or bulk</span>
+            </div>
+          </div>
+        </div>
+        <button
+          class="theme-btn mx-auto w-max block lg:mt-16 mt-8 lg:!text-[30px] !text-[20px]"
+        >
+          Download Spec Sheet
+        </button>
+      </div>
+    </section>
+    <footer class="bg-secoundaryColor text-[#3a5b36] px-6 py-10 mt-12">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="xl:pr-8">
+          <h1 class="text-3xl font-bold">ERIDEN</h1>
+          <p class="text-[#3a5b36]/70 mt-2 text-md capitalize">
+            Trusted rice bran exporter from tanzania to the world
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-lg font-semibold mb-3">Quick Links</h2>
+          <ul class="space-y-2 text-[#3a5b36]/80">
+            <li>
+              <a href="index.html" class="hover:text-[#3a5b36]"> Home </a>
+            </li>
+            <li>
+              <a href="about.html" class="hover:text-[#3a5b36]"> About </a>
+            </li>
+            <li>
+              <a href="product.html" class="hover:text-[#3a5b36]"> Product </a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-[#3a5b36]"> Contact </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-lg font-semibold mb-3">Get In Touch</h2>
+          <div class="flex flex-col gap-4 text-[#3a5b36]/80">
+            <a
+              href="#"
+              class="hover:text-[#3a5b36] flex items-center gap-2 leading-normal"
+            >
+              <i class="fas fa-phone text-themeColor text-2xl"></i>
+              +255 22 123 4567
+            </a>
+            <a
+              href="#"
+              class="hover:text-[#3a5b36] flex items-center gap-2 leading-normal"
+            >
+              <i class="fas fa-envelope text-themeColor text-2xl"></i>
+              info@eridenexport.com
+            </a>
+            <a
+              href="#"
+              class="hover:text-[#3a5b36] flex items-center gap-2 leading-normal"
+            >
+              <i class="fas fa-map-marker-alt text-themeColor text-2xl"></i>
+              1234 Export Rd, Dar es Salaam, Tanzania
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-lg font-semibold mb-3">Follow Us</h2>
+          <div class="flex gap-4 text-[#3a5b36]/80">
+            <a href="#" class="hover:text-[#3a5b36]">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="hover:text-[#3a5b36]">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="hover:text-[#3a5b36]">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="hover:text-[#3a5b36]">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="mt-10 border-t border-[#3a5b36]/20 pt-6 text-center text-sm text-[#3a5b36]/60"
+      >
+        © {new Date().getFullYear()} ERIDEN. All rights reserved.
+      </div>
+    </footer>
+  </body>
+  <script>
+    // Highlight active link
+    const currentPath = window.location.pathname;
+    document.querySelectorAll(".nav-link, .mobile-nav-link").forEach((link) => {
+      if (link.getAttribute("href") === currentPath) {
+        link.classList.add("bg-themeColor", "text-white");
+      } else {
+        link.classList.add("text-gray-800");
+        link.classList.add("hover:bg-themeColor", "hover:text-white");
+      }
+    });
+
+    // Mobile menu toggle
+    const toggleBtn = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const iconOpen = document.getElementById("menu-icon-open");
+    const iconClose = document.getElementById("menu-icon-close");
+
+    toggleBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+      iconOpen.classList.toggle("hidden");
+      iconClose.classList.toggle("hidden");
+    });
+  </script>
+</html>

@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root, :host {
+  --font-roboto: "Roboto", sans-serif;
+  --default-font-family: var(--font-roboto);
+  --default-mono-font-family: var(--font-roboto);
+  --color-themeColor: #3a5b36;
+  --color-secoundaryColor: #fdfaf3;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-roboto) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-display: swap;
+  overflow-x: hidden;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+.form-control {
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  outline: 0;
+}
+
+input:focus {
+  box-shadow: none;
+  outline: 0;
+}
+
+.theme-btn {
+  background-color: var(--color-themeColor);
+  padding: 0.7rem 2rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 21px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.theme-btn.white {
+  background-color: #fff;
+  color: var(--color-themeColor);
+}
